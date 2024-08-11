@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.first_screen.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bg_landingpage"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_profile"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="140dp"
+        android:src="@drawable/ic_photoprofile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    
+    <com.example.suitmediaapps.custom_view.StringEditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginHorizontal="40dp"
+        android:hint="@string/name_hint"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="18dp"
+        android:textSize="16sp"
+        android:background="@drawable/bg_edit_text"
+        android:backgroundTint="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_profile"/>
+
+    <com.example.suitmediaapps.custom_view.StringEditText
+        android:id="@+id/et_palindrome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:layout_marginHorizontal="40dp"
+        android:hint="@string/palindrome_hint"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="18dp"
+        android:textSize="16sp"
+        android:background="@drawable/bg_edit_text"
+        android:backgroundTint="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_name"/>
+
+    <Button
+        android:id="@+id/btn_check"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginHorizontal="40dp"
+        android:paddingVertical="12dp"
+        android:text="@string/check"
+        android:textSize="14sp"
+        android:textAllCaps="true"
+        android:backgroundTint="@color/blue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_palindrome"/>
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginHorizontal="40dp"
+        android:paddingVertical="12dp"
+        android:backgroundTint="@color/blue"
+        android:text="@string/next"
+        android:textSize="14sp"
+        android:textAllCaps="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_check"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">SuitmediaApps</string>
+    <string name="error_empty_section">This section can\'t be empty</string>
+    <string name="name_hint">Name</string>
+    <string name="palindrome_hint">Palindrome</string>
+    <string name="check">Check</string>
+    <string name="next">next</string>
+    <string name="welcome">Welcome</string>
+    <string name="dummy">John Doe</string>
+    <string name="selected">Selected</string>
+    <string name="choose_user">Choose a User</string>
+    <string name="second_activity">Second Screen</string>
+    <string name="third_activity">Third Screen</string>
+    <string name="first_name">Firstname</string>
+    <string name="last_name">Lastname</string>
+    <string name="email">email@email.com</string>
+    <string name="selected_uname">Selected User Name</string>
+</resources>

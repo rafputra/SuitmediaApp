@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardview_username"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    app:cardElevation="1dp"
+    android:layout_marginBottom="1dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_profile"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_marginVertical="20dp"
+            android:layout_marginStart="20dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/dummy"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_firstname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/first_name"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="40dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/img_profile"/>
+
+        <TextView
+            android:id="@+id/tv_lastname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/last_name"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginStart="6dp"
+            app:layout_constraintTop_toTopOf="@id/tv_firstname"
+            app:layout_constraintStart_toEndOf="@id/tv_firstname"/>
+
+        <TextView
+            android:id="@+id/tv_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/email"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            android:textColor="@color/black"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="true"
+            app:layout_constraintTop_toBottomOf="@id/tv_firstname"
+            app:layout_constraintStart_toEndOf="@id/img_profile"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
